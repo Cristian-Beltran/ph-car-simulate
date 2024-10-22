@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.config-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 10;
+    width: 300px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="range"],
+input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#samples {
+    max-height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e1e1e1;
+}
+
+.oled-screen {
+    width: 256px; /* Ancho de la pantalla OLED */
+    height: 128px; /* Alto de la pantalla OLED */
+    background-color: #000; /* Color de fondo de la pantalla OLED */
+    border: 2px solid #00ff00; /* Borde verde que simula el LED */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espacio interno */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra verde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff00; /* Color del texto */
+    text-align: center;
+    overflow: hidden; /* Para evitar que el texto sobresalga */
+}
+
+.oled-text {
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.2; /* Altura de línea */
+}
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
